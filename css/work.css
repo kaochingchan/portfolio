@@ -1,0 +1,195 @@
+:root {
+  --block-width: calc(990px / 3);
+}
+
+.listBlock {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.listTitle {
+  height: 75px;
+  margin-bottom: 20px;
+}
+
+.workFulls {
+  /* width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px; /* 可選：設置色塊之間的間距 */
+  width: 100%;
+  max-width: 1000px;
+}
+
+.workblock {
+  width: var(--block-width);
+  height: var(--block-width);
+  box-sizing: border-box;
+  /* width: 330px;
+  height: 330px; */
+  background-color: rgb(255, 255, 255);
+  transition: border-radius 0.3s ease;
+}
+
+.workblock:hover {
+  border-radius: 0px 50px;
+}
+
+#typo_01 {
+  background-image: url("../img/spruceMincho/workblock.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+
+#typo_01:hover {
+  background-image: url("../img/spruceMincho/workblock_hover.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 50px;
+}
+
+#typo_02 {
+  background-image: url("../img/artisanHan/workblock.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+
+#typo_02:hover {
+  background-image: url("../img/artisanHan/workblock_hover.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 50px;
+}
+
+#typo_03 {
+  background-image: url("../img/wolfType/workblock.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+
+#typo_03:hover {
+  background-image: url("../img/wolfType/workblock_hover.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 50px;
+}
+
+#typo_04 {
+  background-image: url("../img/newrounded/workblock.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+
+#typo_04:hover {
+  background-image: url("../img/newrounded/workblock_hover.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+
+#logo_01 {
+  background-image: url("../img/logotype/logotype_01.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+#logo_01:hover {
+  background-image: url("../img/logotype/logotype_01_hover.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 50px;
+}
+
+#logo_02 {
+  background-image: url("../img/logotype/logotype_02.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+
+#logo_02:hover {
+  background-image: url("../img/logotype/logotype_02_hover.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 50px;
+}
+
+#logo_03 {
+  background-image: url("../img/logotype/logotype_03.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+
+#logo_03:hover {
+  background-image: url("../img/logotype/logotype_03_hover.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 50px;
+}
+
+#logo_04 {
+  background-image: url("../img/logotype/logotype_04.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+
+#logo_04:hover {
+  background-image: url("../img/logotype/logotype_04.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 50px;
+}
+
+#logo_05 {
+  background-image: url("../img/logotype/logotype_05.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+
+#logo_06 {
+  background-image: url("../img/logotype/logotype_06.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35 ease, border-radius 0.3s ease;
+}
+
+#ui_01 {
+  background-image: url("../img/foodApp/workblock.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35s ease;
+}
+
+#ui_01:hover {
+  background-image: url("../img/foodApp/workblock_hover.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35s ease;
+}
+
+#packaging_01 {
+  background-image: url("../img/teaPackaging/workblock.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35s ease;
+}
+
+#packaging_01:hover {
+  background-image: url("../img/teaPackaging/workblock_hover.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 50px;
+}

@@ -1,0 +1,165 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.banblock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Barlow", "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  position: fixed;
+}
+.container {
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  padding: 0;
+}
+
+#nav {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: fixed;
+}
+
+#nav_logo {
+  height: 40px;
+}
+
+#nav_text {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#nav_text h1 {
+  margin-left: 20px;
+  color: white;
+}
+
+#null {
+  height: 100px;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: "Barlow", "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#footer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h5 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+#footer_text h5 {
+  color: white;
+}
+
+.work_banner {
+  width: 100%;
+  height: 680px;
+  margin-bottom: 40px;
+  background-color: antiquewhite;
+}
+
+.textblock_01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Barlow", "Noto Sans TC", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1.05px;
+}
+.info {
+  width: 35%;
+  height: auto;
+}
+.info_title {
+  font-size: 32px;
+  color: #e4240f;
+  font-family: "Barlow", "Noto Sans TC", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.info_year {
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 60%;
+  height: auto;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .banblock {
+    display: flex;
+  }
+}

@@ -1,0 +1,46 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+.work_banner {
+  background-image: url("../img/teapackaging/Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#customType {
+  width: 1000px;
+  margin: 0;
+}
+
+#aiBlock {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+#aiBlock img {
+  width: 50%;
+}
+
+#imgBlock div:nth-child(1) {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+#imgBlock div:nth-child(1) img {
+  width: 497.5px;
+  margin-bottom: 5px;
+}

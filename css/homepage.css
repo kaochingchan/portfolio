@@ -1,0 +1,201 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  padding: 0;
+}
+
+#nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+#nav_logo {
+  height: 40px;
+}
+
+#nav_text {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#nav_text h1 {
+  margin-left: 20px;
+  color: white;
+}
+
+h1 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#footer_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h5 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+#footer_text h5 {
+  color: white;
+}
+
+/* 網頁內容 */
+#homepage_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+}
+
+.swiper {
+  width: 100%;
+  height: 580px;
+  color: white;
+}
+
+.slide_img {
+  width: 1000px;
+  height: 580px;
+}
+
+#slide_1 {
+  background-image: url("../img/spruceMincho/homepage_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slide_2 {
+  background-image: url("../img/teaPackaging/homepage_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slide_3 {
+  background-image: url("../img/graduateProject/homepage_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slide_4 {
+  background-image: url("../img/wolfType/homepage_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slide_5 {
+  background-image: url("../img/logotype/homepage_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slide_5 {
+  background-image: url("../img/logotype/homepage_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slide_6 {
+  background-image: url("../img/logotype/homepage_img2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 1.25pt;
+  font-weight: 300;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.slide_img:hover .overlay {
+  opacity: 1;
+}
+
+.banblock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Barlow", "Noto Sans TC", sans-serif;
+  font-weight: 400;
+  position: fixed;
+}
+
+@media (max-width: 1000px) {
+  .banblock {
+    display: flex;
+  }
+}
