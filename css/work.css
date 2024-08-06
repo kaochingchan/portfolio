@@ -1,3 +1,8 @@
+body,
+html {
+  background-color: black;
+}
+
 :root {
   --block-width: calc(990px / 3);
 }
