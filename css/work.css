@@ -46,6 +46,14 @@
   background-position: center;
   background-size: cover;
   transition: background-image 0.35 ease, border-radius 0.3s ease;
+  position: relative;
+}
+/* 獎勵小旗子 */
+#typo_01 .awardRibbon_text {
+  color: #6db224;
+}
+#typo_01 .awardRibbonTop {
+  background-color: #fff;
 }
 
 #typo_01:hover {
@@ -74,6 +82,14 @@
   background-position: center;
   background-size: cover;
   transition: background-image 0.35 ease, border-radius 0.3s ease;
+  position: relative;
+}
+
+#typo_03 .awardRibbon_text {
+  color: #000000;
+}
+#typo_03 .awardRibbonTop {
+  background-color: #282828;
 }
 
 #typo_03:hover {

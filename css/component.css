@@ -50,6 +50,7 @@ p {
   justify-content: space-between;
   padding: 20px 0;
   position: fixed;
+  z-index: 99;
 }
 
 #nav_logo {
@@ -156,6 +157,49 @@ p {
   width: 60%;
   height: auto;
   font-size: 16px;
+}
+
+/* 獎勵小旗子 */
+.awardRibbon {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: auto;
+  height: auto;
+  z-index: 2;
+  transform: scaleY(1);
+}
+
+.awardRibbonTop {
+  width: auto;
+  height: 0px;
+  transform-origin: top;
+}
+
+.awardRibbon:hover .awardRibbonTop {
+  height: 5px;
+}
+
+.awardRibbon_text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 95px;
+  left: -10px;
+  padding: 10px;
+  width: 80px;
+  height: auto;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.27);
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.awardRibbon:hover .awardRibbon_text {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 1000px) {
