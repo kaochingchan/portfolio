@@ -1,0 +1,73 @@
+body,
+html {
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: rgb(255, 255, 255);
+  font-family: "Barlow", "Noto Sans TC", sans-serif;
+}
+
+#nav {
+  background-color: rgb(0, 0, 0);
+}
+
+#img_data {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+#perosnalImg {
+  width: 45%;
+  height: auto;
+  filter: grayscale(80%);
+}
+
+#data {
+  width: 50%;
+  height: auto;
+}
+
+#name {
+  height: 45px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 350;
+  letter-spacing: 1.5px;
+  line-height: 2;
+}
+
+.textBlock_Content {
+  margin-top: 8px;
+}
+
+.textBlock {
+  margin-bottom: 30px;
+}
+
+.textBlock:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+#bio {
+  margin-bottom: 75px;
+}

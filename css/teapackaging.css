@@ -12,6 +12,12 @@ h6,
 p {
   color: white;
 }
+
+p {
+  letter-spacing: 1.5px;
+  line-height: 1.75;
+}
+
 .work_banner {
   background-image: url("../img/teaPackaging/banner.jpg");
   background-size: cover;

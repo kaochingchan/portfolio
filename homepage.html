@@ -27,6 +27,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   </head>
   <body>
     <div class="banblock">請使用電腦版瀏覽器以獲得最佳瀏覽體驗</div>
@@ -38,72 +40,74 @@
         /></a>
         <div id="nav_text">
           <a href="./work.html"> <h1>WORK</h1> </a>
-          <a href=""> <h1>ABOUT</h1> </a
+          <a href="./about.html"> <h1>ABOUT</h1> </a
           ><a href="">
             <h1>BlOG</h1>
           </a>
         </div>
       </div>
 
-      <!-- 主要內容 -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide slide_img" id="slide_1">
-            <a href="./work/spruceMincho.html"
-              ><div class="overlay">
-                <p>雲杉/一款瘦長明體提案</p>
-                <p>2023-2024</p>
-              </div></a
-            >
-          </div>
-          <div class="swiper-slide slide_img" id="slide_2">
-            <a href="./work/teapackaging.html"
-              ><div class="overlay">
-                <p>四月望雨茶包裝設計</p>
-                <p>2023</p>
-              </div></a
-            >
-          </div>
-          <div class="swiper-slide slide_img" id="slide_3">
-            <a href=""
-              ><div class="overlay">
-                <p>馬路如符口</p>
-                <p>2023-2024</p>
-              </div></a
-            >
-          </div>
-          <div class="swiper-slide slide_img" id="slide_4">
-            <a href=""
-              ><div class="overlay">
-                <p>山海經神獸字體海報設計</p>
-                <p>2023</p>
-              </div></a
-            >
+      <div class="wrapper">
+        <!-- 主要內容 -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide_img" id="slide_1">
+              <a href="./work/spruceMincho.html"
+                ><div class="overlay">
+                  <p>雲杉/一款瘦長明體提案</p>
+                  <p>2023-2024</p>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide slide_img" id="slide_2">
+              <a href="./work/teapackaging.html"
+                ><div class="overlay">
+                  <p>四月望雨茶包裝設計</p>
+                  <p>2023</p>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide slide_img" id="slide_3">
+              <a href=""
+                ><div class="overlay">
+                  <p>馬路如符口</p>
+                  <p>2023-2024</p>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide slide_img" id="slide_4">
+              <a href=""
+                ><div class="overlay">
+                  <p>山海經神獸字體海報設計</p>
+                  <p>2023</p>
+                </div></a
+              >
+            </div>
+
+            <div class="swiper-slide slide_img" id="slide_5">
+              <a href=""
+                ><div class="overlay">
+                  <p>Logotype Collection</p>
+                  <p>2022-2024</p>
+                </div></a
+              >
+            </div>
+            <div class="swiper-slide slide_img" id="slide_6">
+              <a href=""
+                ><div class="overlay">
+                  <p>Logotype Collection 2</p>
+                  <p>2022-2024</p>
+                </div></a
+              >
+            </div>
           </div>
 
-          <div class="swiper-slide slide_img" id="slide_5">
-            <a href=""
-              ><div class="overlay">
-                <p>Logotype Collection</p>
-                <p>2022-2024</p>
-              </div></a
-            >
-          </div>
-          <div class="swiper-slide slide_img" id="slide_6">
-            <a href=""
-              ><div class="overlay">
-                <p>Logotype Collection 2</p>
-                <p>2022-2024</p>
-              </div></a
-            >
-          </div>
-        </div>
-
-        <!-- If we need navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div>
+          <!-- If we need navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div> -->
+        </div>
       </div>
 
       <!-- 頁尾 -->
@@ -117,6 +121,16 @@
     </div>
 
     <script>
+      // GSAP 動畫
+      const tl = gsap.timeline({
+        defaults: { duration: 2, ease: "power2.out" },
+        delay: 0.5,
+      });
+
+      // 布幕下拉效果
+      tl.fromTo(".swiper", { opacity: 0, y: "-100%" }, { opacity: 1, y: "0%" });
+
+      // Swiper
       var swiper = new Swiper(".swiper", {
         autoplay: {
           delay: 3000,
@@ -127,6 +141,45 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        autoplay: false,
+      });
+
+      setTimeout(() => {
+        swiper.params.autoplay.delay = 3000; // 确保 autoplay 延迟设置正确
+        swiper.autoplay.start();
+      }, 3000);
+
+      // 获取所有带有 slide_img 类的图片元素
+      const slideImages = document.querySelectorAll(".slide_img");
+
+      // 为每个 slide_img 元素添加点击事件监听器
+      slideImages.forEach((image) => {
+        image.addEventListener("click", (event) => {
+          event.preventDefault(); // 阻止默认的链接跳转行为
+          const targetUrl = event.currentTarget.querySelector("a").href;
+          // 反转布幕效果，并淡出导航栏和页脚
+          gsap
+            .timeline()
+            .to(".swiper", {
+              opacity: 0,
+              y: "-100%", // 目标状态：高度为 0
+              duration: 1,
+              ease: "power2.out",
+            })
+            .to(
+              "#nav, #footer",
+              {
+                opacity: 0, // 淡出导航栏和页脚
+                duration: 0.5,
+                ease: "power2.out",
+                onComplete: () => {
+                  // 动画完成后进行页面跳转
+                  window.location.href = targetUrl;
+                },
+              },
+              "-=0.5"
+            ); // 将导航和页脚淡出的动画与布幕动画同时进行
+        });
       });
     </script>
   </body>

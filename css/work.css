@@ -7,6 +7,10 @@ html {
   --block-width: calc(990px / 3);
 }
 
+#nav {
+  background-color: rgb(0, 0, 0);
+}
+
 .listBlock {
   width: 100%;
   height: auto;

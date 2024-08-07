@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>關於我</title>
+    <link rel="stylesheet" href="./css/component.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="icon" href="./img/component/favicon.ico" sizes="any" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="banblock">請使用電腦版瀏覽器以獲得最佳瀏覽體驗</div>
+    <div class="container">
+      <!-- 導覽列 -->
+      <div id="nav">
+        <a href="./homepage.html"
+          ><img src="./img/component/Logo.svg" alt="" id="navlogo"
+        /></a>
+        <div id="nav_text">
+          <a href="./work.html"> <h1>WORK</h1> </a>
+          <a href="./about.html"> <h1>ABOUT</h1> </a
+          ><a href="">
+            <h1>BlOG</h1>
+          </a>
+        </div>
+      </div>
+      <div id="null"></div>
+      <!-- 主要內容 -->
+      <div id="img_data">
+        <img src="./img/component/personal_img.png" alt="" id="perosnalImg" />
+        <div id="data" class="anime_01">
+          <img src="./img/component/Name.svg" alt="" id="name" />
+          <div class="textBlock anime_01">
+            <h3>Education</h3>
+            <div class="textBlock_Content">
+              <p>國立臺灣藝術大學 視覺傳達設計學系 2020~2024</p>
+            </div>
+          </div>
+
+          <div class="textBlock anime_01">
+            <h3>Project</h3>
+            <div class="textBlock_Content">
+              <p>2022 大臺北藝術節 自由之海 網站建置</p>
+              <p>2024 臺灣文博會 科技互動裝置設計</p>
+            </div>
+          </div>
+
+          <div class="textBlock anime_01">
+            <h3>Award</h3>
+            <div class="textBlock_Content">
+              <p>2021 國立臺灣藝術大學視覺傳達設計系系展 佳作</p>
+              <p>2022 國立臺灣藝術大學視覺傳達設計系系展 佳作</p>
+              <p>2022 Justfont 第六屆造字鼓勵元 首獎</p>
+              <p>2024 國立臺灣藝術大學 視覺傳達設計學系 109級畢業展 佳作</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bio" class="anime_01">
+        <h3>Bio</h3>
+        <div class="textBlock_Content">
+          <p>
+            高慶展2024年畢業於臺藝視傳。從在學期間起便專注於研究漢字設計，曾獲得Justfont第六屆造字鼓勵元首獎，以職業字體設計師為目標努力，業餘期間亦從事標準字設計，持續保持創作活力。
+          </p>
+          <br />
+          <p>
+            除了字體設計外，對於UIUX領域也有所涉略，透過黑客松、App
+            Redesign等Side
+            Project的參與累積經驗，同時具有初階前端開發能力，參與部分專案網頁的介面規劃/開發，發揮設計、開發兩項能力，形塑出更好的設計、用戶體驗。
+          </p>
+          <br />
+          <br />
+
+          <p>
+            ChingChan Kao graduated from the Visual Communication Design
+            apartment at National Taiwan University of the Arts in 2024. Since
+            his student days, he has focused on the study of Hanzi design and
+            won the Encouragement Award at the 6th Justfont Type Design
+            Competition. Aiming to become a professional type designer, he also
+            dabbles in logotype design in his spare time to maintain his
+            creative vigour.
+          </p>
+          <br />
+          <p>
+            In addition to type design, Kao has also ventured into the field of
+            UI/UX. By participating in hackathons and app redesign side
+            projects, he has gained valuable experience. Possessing basic
+            front-end development skills, he has contributed to the interface
+            planning and development of several projects, leveraging both design
+            and development skills to create better design and user experiences.
+          </p>
+        </div>
+      </div>
+      <!-- 頁尾 -->
+      <div id="footer">
+        <div id="footer_text">
+          <h5>EMAIL john0207200@gmail.com</h5>
+          <h5>Instagram kao_type</h5>
+        </div>
+        <img src="./img/component/Secondary_Logo.svg" alt="" id="footer_logo" />
+      </div>
+    </div>
+    <script>
+      gsap.from("#perosnalImg", {
+        x: -250,
+        duration: 1,
+        ease: "power2.out",
+      });
+      const contents = document.querySelectorAll(".anime_01");
+
+      const tl = gsap.timeline({
+        defaults: { duration: 1, ease: "power2.out" },
+        delay: 0.5,
+      });
+
+      // 为每个 .content 元素添加动画
+      contents.forEach((content, index) => {
+        tl.fromTo(
+          content,
+          { opacity: 0, y: -20 }, // 初始状态
+          { opacity: 1, y: 0 }, // 目标状态
+          index * 0.5 // 每个动画的延迟时间
+        );
+      });
+    </script>
+  </body>
+</html>
