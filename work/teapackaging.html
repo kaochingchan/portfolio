@@ -18,12 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   </head>
   <body>
     <div class="banblock">請使用電腦版瀏覽器以獲得最佳瀏覽體驗</div>
@@ -44,7 +40,9 @@
       <div id="null"></div>
     </div>
 
-    <div class="work_banner"></div>
+    <div class="banner_wrapper">
+      <div class="work_banner"></div>
+    </div>
 
     <div class="container">
       <!-- 主要內容 -->
@@ -121,5 +119,18 @@
         />
       </div>
     </div>
+    <script>
+      const tl = gsap.timeline({
+        defaults: { duration: 2, ease: "power2.out" },
+        delay: 0.5,
+      });
+
+      // 布幕下拉效果
+      tl.fromTo(
+        ".work_banner",
+        { opacity: 0, y: "-100%" },
+        { opacity: 1, y: "0%" }
+      );
+    </script>
   </body>
 </html>

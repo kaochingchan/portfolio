@@ -121,14 +121,28 @@
     </div>
 
     <script>
+      const tl2 = gsap.timeline({
+        defaults: { duration: 1, ease: "power2.out" },
+        delay: 0.5,
+      });
+      tl2.from("#nav, #footer", { opacity: 0 }, { opacity: 1 });
+
       // GSAP 動畫
       const tl = gsap.timeline({
-        defaults: { duration: 2, ease: "power2.out" },
+        defaults: { ease: "power2.out" },
         delay: 0.5,
       });
 
       // 布幕下拉效果
-      tl.fromTo(".swiper", { opacity: 0, y: "-100%" }, { opacity: 1, y: "0%" });
+      tl.fromTo(
+        "#nav, #footer",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.7 }
+      ).fromTo(
+        ".swiper",
+        { opacity: 0, y: "-100%" },
+        { opacity: 1, y: "0%", duration: 2 }
+      );
 
       // Swiper
       var swiper = new Swiper(".swiper", {
