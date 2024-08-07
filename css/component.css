@@ -64,6 +64,7 @@ p {
 
 #nav_text h1 {
   margin-left: 20px;
+  line-height: 30px;
   color: white;
 }
 
@@ -87,7 +88,23 @@ h3 {
 }
 
 a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
   text-decoration: none;
+}
+
+#igIcon {
+  width: auto;
+  height: 24px;
+}
+
+.custom-icon {
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
 }
 
 #footer {
@@ -209,5 +226,6 @@ p {
 @media (max-width: 1000px) {
   .banblock {
     display: flex;
+    font-size: 16px;
   }
 }
