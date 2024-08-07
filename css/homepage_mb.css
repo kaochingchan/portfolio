@@ -1,3 +1,6 @@
+#null_mb {
+  display: none;
+}
 @media (max-width: 1000px) {
   #nav {
     display: none;
@@ -27,6 +30,11 @@
     height: 25px;
   }
 
+  #null_mb {
+    display: block;
+    height: 90px;
+    width: 100%;
+  }
   #nav_mb_text {
     width: 100%;
     height: auto;
@@ -59,7 +67,6 @@
     background-color: black;
   }
   .wrapper {
-    margin-top: 125px;
     width: 300px;
     height: 500px;
     overflow: hidden;
