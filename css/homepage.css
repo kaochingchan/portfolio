@@ -26,6 +26,10 @@ p {
   padding: 0;
 }
 
+#nav_mb {
+  display: none;
+}
+
 #nav {
   width: 100%;
   height: auto;
@@ -155,12 +159,6 @@ h5 {
 
 #slide_4 {
   background-image: url("../img/wolfType/homepage_img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#slide_5 {
-  background-image: url("../img/logotype/homepage_img.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

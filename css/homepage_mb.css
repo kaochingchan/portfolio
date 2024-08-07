@@ -1,0 +1,106 @@
+@media (max-width: 1000px) {
+  #nav {
+    display: none;
+  }
+
+  #nav_mb {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 99;
+  }
+  #nav_mb div:first-child {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #nav_mb_logo {
+    height: 45px;
+  }
+  #burger {
+    height: 25px;
+  }
+
+  #nav_mb_text {
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 8px 0;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+  #nav_mb_text h1 {
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    margin: 8px 0px;
+  }
+  #homepage_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+  }
+  .wrapper {
+    margin-top: 125px;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+  }
+  .swiper {
+    width: 100%;
+    height: 500px;
+  }
+  #slide_1 {
+    background-image: url("../img/spruceMincho/homepage_img_mb.png");
+  }
+  #slide_2 {
+    background-image: url("../img/teaPackaging/homepage_img_mb.png");
+  }
+  #slide_3 {
+    background-image: url("../img/graduateProject/homepage_img_mb.png");
+  }
+  #slide_4 {
+    background-image: url("../img/wolfType/homepage_img_mb.png");
+  }
+  #slide_5 {
+    background-image: url("../img/logotype/homepage_img_mb_logotype01.png");
+  }
+
+  #slide_6 {
+    background-image: url("../img/logotype/homepage_img_mb_logotype02.png");
+  }
+
+  h5 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  #footer_text h5 {
+    color: white;
+  }
+
+  #footer_logo {
+    height: 35px;
+  }
+}

@@ -9,6 +9,7 @@
     />
     <title>高氏設計</title>
     <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel="stylesheet" href="./css/homepage_mb.css" />
     <link rel="icon" href="./img/component/favicon.ico" sizes="any" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,12 +35,13 @@
       src="https://kit.fontawesome.com/f5377ada9d.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./js/nav_mb.js"></script>
   </head>
   <body>
-    <div class="banblock">請使用電腦版瀏覽器以獲得最佳瀏覽體驗</div>
     <div id="homepage_container">
       <!-- 導覽列 -->
-      <div id="nav">
+      <div id="nav" class="nav_anime">
         <a href="./homepage.html"
           ><img src="./img/component/Logo.svg" alt="" id="navlogo"
         /></a>
@@ -52,6 +54,26 @@
           <a href="https://www.instagram.com/kao_type/" id="igIcon"
             ><i class="fa-brands fa-instagram custom-icon"></i
           ></a>
+        </div>
+      </div>
+
+      <div id="nav_mb" class="nav_anime">
+        <div>
+          <a href="./homepage.html"
+            ><img src="./img/component/Logo.svg" alt="" id="nav_mb_logo"
+          /></a>
+          <img src="./img/component/burger_mb.svg" alt="" id="burger" />
+        </div>
+
+        <div id="nav_mb_text">
+          <a href="./work.html"> <h1>WORK</h1> </a>
+          <a href="./about.html"> <h1>ABOUT</h1> </a>
+          <a href="">
+            <h1>BlOG</h1>
+          </a>
+          <a href="https://www.instagram.com/kao_type/">
+            <h1>Instagram</h1>
+          </a>
         </div>
       </div>
 
@@ -129,13 +151,13 @@
     </div>
 
     <script>
+      // GSAP 進場動畫 nav淡入
       const tl2 = gsap.timeline({
         defaults: { duration: 1, ease: "power2.out" },
         delay: 0.5,
       });
-      tl2.from("#nav, #footer", { opacity: 0 }, { opacity: 1 });
+      tl2.from(".nav_anime, #footer", { opacity: 0 }, { opacity: 1 });
 
-      // GSAP 動畫
       const tl = gsap.timeline({
         defaults: { ease: "power2.out" },
         delay: 0.5,
@@ -143,7 +165,7 @@
 
       // 布幕下拉效果
       tl.fromTo(
-        "#nav, #footer",
+        ".nav_anime, #footer",
         { opacity: 0 },
         { opacity: 1, duration: 1 }
       ).fromTo(
@@ -189,7 +211,7 @@
               ease: "power2.out",
             })
             .to(
-              "#nav, #footer",
+              ".nav_anime, #footer",
               {
                 opacity: 0, // 淡出导航栏和页脚
                 duration: 0.5,
