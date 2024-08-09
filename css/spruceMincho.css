@@ -12,14 +12,43 @@
 .fullimg_block {
   width: 100%;
   height: auto;
-  margin: 0;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0px;
+}
+
+.fullimg_block img {
+  width: 100%;
 }
 
 .imgBlock {
   display: flex;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .imgBlock img {
   width: 50%;
+}
+
+#strokes {
+  width: 35%;
+}
+
+#fullLayout {
+  width: 80%;
+}
+
+#apply01 {
+  width: 75%;
+}
+
+#apply02 {
+  width: 75%;
+}
+
+#apply03 {
+  width: 75%;
 }
