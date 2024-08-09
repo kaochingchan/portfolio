@@ -137,40 +137,36 @@ h5 {
 .slide_img {
   width: 1000px;
   height: 580px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #slide_1 {
   background-image: url("../img/spruceMincho/homepage_img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #slide_2 {
   background-image: url("../img/teaPackaging/homepage_img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #slide_3 {
   background-image: url("../img/graduateProject/homepage_img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #slide_4 {
   background-image: url("../img/wolfType/homepage_img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #slide_5 {
   background-image: url("../img/logotype/homepage_img.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #slide_6 {
   background-image: url("../img/logotype/homepage_img2.png");
+}
+
+#slide_7 {
+  background-image: url("../img/artisanHan/homepage_img.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -187,7 +183,7 @@ h5 {
   font-weight: 300;
   font-size: 24px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
   opacity: 0;
   transition: opacity 0.3s ease;
 }

@@ -1,4 +1,5 @@
 .textblock_01 {
+  width: 100%;
   margin-bottom: 0;
 }
 .work_banner {
@@ -8,23 +9,39 @@
   background-repeat: no-repeat;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .info_title {
   color: #000000;
 }
 
 .fullimg_block {
-  width: 100%;
-  height: auto;
-  margin: 0;
+  margin: 75px auto;
+}
+
+#initialversion {
+  width: 800px;
+}
+
+#fullLayout {
+  width: 800px;
 }
 
 #apply01 {
-  margin-bottom: 50px;
+  width: 817px;
+}
+
+#apply02 {
+  width: 100%;
 }
 
 .imgBlock {
   display: flex;
-  margin-top: 60px;
 }
 
 .imgBlock img {

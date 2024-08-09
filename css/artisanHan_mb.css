@@ -1,0 +1,129 @@
+#nav_mb {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #nav {
+    display: none;
+  }
+
+  #nav_mb {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: auto;
+    background-color: white;
+  }
+  #nav_mb div:first-child {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #nav_mb_logo {
+    height: 45px;
+  }
+  #burger {
+    height: 25px;
+  }
+
+  #nav_mb_text {
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 0;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+  }
+  #nav_mb_text h1 {
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 8px 0px;
+  }
+
+  .container {
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding: 0;
+  }
+  h5 {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  #footer_logo {
+    height: 35px;
+  }
+
+  .work_banner {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    background-image: url("../img/artisanHan/banner_mb.png");
+
+    background-size: fill;
+  }
+
+  .textblock_01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+  .info {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .info_title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .description {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+  }
+
+  .fullimg_block {
+    margin: 25px auto;
+  }
+
+  #initialversion,
+  #fullLayout,
+  #apply01,
+  #apply02 {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+  }
+}

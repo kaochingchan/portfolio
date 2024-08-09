@@ -10,7 +10,9 @@
     <title>雲杉</title>
     <link rel="stylesheet" href="../css/component.css" />
     <link rel="stylesheet" href="../css/blackcomponent.css" />
+
     <link rel="stylesheet" href="../css/spruceMincho.css" />
+    <link rel="stylesheet" href="../css/spruceMincho_mb.css" />
     <link rel="icon" href="../img/component/favicon.ico" sizes="any" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,28 +33,53 @@
       src="https://kit.fontawesome.com/f5377ada9d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/nav_mb.js"></script>
   </head>
   <body>
-    <div class="banblock">請使用電腦版瀏覽器以獲得最佳瀏覽體驗</div>
-    <div class="container">
-      <!-- 導覽列 -->
-      <div id="nav">
-        <a href="../homepage.html"
-          ><img src="../img/component/Logo_Black.svg" alt="" id="navlogo"
-        /></a>
-        <div id="nav_text">
-          <a href="../work.html"> <h1>WORK</h1> </a>
-          <a href="../about.html"> <h1>ABOUT</h1> </a
-          ><a href="">
+    <div class="containerWrapper">
+      <div class="container">
+        <!-- 導覽列 -->
+        <div id="nav">
+          <a href="../homepage.html"
+            ><img src="../img/component/Logo_Black.svg" alt="" id="navlogo"
+          /></a>
+          <div id="nav_text">
+            <a href="../work.html"> <h1>WORK</h1> </a>
+            <a href="../about.html"> <h1>ABOUT</h1> </a
+            ><a href="">
+              <h1>BlOG</h1>
+            </a>
+            <a href="https://www.instagram.com/kao_type/" id="igIcon"
+              ><i class="fa-brands fa-instagram custom-icon"></i
+            ></a>
+          </div>
+        </div>
+
+        <div id="null"></div>
+      </div>
+
+      <div id="nav_mb" class="nav_anime">
+        <div>
+          <a href="./homepage.html"
+            ><img src="../img/component/Logo_Black.svg" alt="" id="nav_mb_logo"
+          /></a>
+          <img src="../img/component/burger_mb_black.svg" alt="" id="burger" />
+        </div>
+
+        <div id="nav_mb_text">
+          <a href="./work.html"> <h1>WORK</h1> </a>
+          <a href="./about.html"> <h1>ABOUT</h1> </a>
+          <a href="">
             <h1>BlOG</h1>
           </a>
-          <a href="https://www.instagram.com/kao_type/" id="igIcon"
-            ><i class="fa-brands fa-instagram custom-icon"></i
-          ></a>
+          <a href="https://www.instagram.com/kao_type/">
+            <h1>Instagram</h1>
+          </a>
         </div>
       </div>
-      <div id="null"></div>
     </div>
+
+    <div id="null"></div>
     <div class="banner_wrapper">
       <div class="work_banner"></div>
     </div>
@@ -99,6 +126,7 @@
         src="../img/spruceMincho/strokes.png"
         alt="雲杉筆畫"
         class="fullimg_block"
+        id="strokes"
       />
       <img
         src="../img/spruceMincho/fullLayout.png"
