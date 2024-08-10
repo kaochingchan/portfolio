@@ -2,6 +2,10 @@
   display: none;
 }
 
+#aiSwiper {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   #nav {
     display: none;
@@ -16,12 +20,12 @@
     justify-content: space-between;
     margin: 0;
     padding-top: 20px;
-    padding-bottom: 4px;
+    padding-bottom: 20px;
     z-index: 99;
     position: fixed;
     top: 0;
     left: auto;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
   }
   #nav_mb div:first-child {
     width: 300px;
@@ -43,7 +47,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     padding: 8px 0;
     transition: opacity 0.5s ease;
     opacity: 0;
@@ -51,7 +55,7 @@
   #nav_mb_text h1 {
     font-size: 20px;
     line-height: 30px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: 8px 0px;
   }
@@ -79,7 +83,7 @@
     height: 400px;
     margin-bottom: 20px;
     background-color: antiquewhite;
-    background-image: url("../img/spruceMincho/banner_mb.png");
+    background-image: url("../img/teaPackaging/banner.jpg");
 
     background-size: fill;
   }
@@ -89,7 +93,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
   .info {
     width: 100%;
@@ -106,14 +110,8 @@
   }
 
   .fullimg_block {
-    margin: 40px auto;
+    margin: 20px auto;
     overflow: hidden;
-  }
-
-  #fullLayout,
-  #apply01,
-  #apply02 {
-    width: 100%;
   }
 
   h3 {
@@ -127,37 +125,27 @@
     line-height: 1.5;
   }
 
-  #strokes {
-    width: 50%;
+  #customType {
+    width: 100%;
   }
 
   #fullLayout {
     width: 90%;
   }
 
-  #apply01 {
-    width: 90%;
-  }
-
-  #apply02 {
-    width: 100%;
-  }
-
-  #apply03 {
-    width: 90%;
-  }
-
-  .imgBlock {
+  #aiCover {
     display: none;
   }
-
-  #swiper_mb {
+  /* Swiper設定 */
+  #aiSwiper {
     display: block;
+    width: 300px;
+    height: 200px;
   }
 
   .swiper {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
   }
 
   .slide_img {
@@ -166,16 +154,23 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   #slide_1 {
-    background-image: url("../img/spruceMincho/swiper01.png");
+    background-image: url("../img/teaPackaging/aicover_01.png");
   }
   #slide_2 {
-    background-image: url("../img/spruceMincho/swiper02.png");
+    background-image: url("../img/teaPackaging/aicover_02.png");
   }
-  #slide_3 {
-    background-image: url("../img/spruceMincho/swiper03.png");
+  #packagePhoto div:nth-child(1) {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
   }
-  #slide_4 {
-    background-image: url("../img/spruceMincho/swiper04.png");
+  #packagePhoto div:nth-child(1) img {
+    width: 100%;
+    margin-bottom: 5px;
   }
 }

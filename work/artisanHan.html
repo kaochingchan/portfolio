@@ -58,7 +58,7 @@
 
       <div id="nav_mb" class="nav_anime">
         <div>
-          <a href="./homepage.html"
+          <a href="../homepage.html"
             ><img src="../img/component/Logo_Black.svg" alt="" id="nav_mb_logo"
           /></a>
           <img src="../img/component/burger_mb_black.svg" alt="" id="burger" />
@@ -165,10 +165,26 @@
 
       // 布幕下拉效果
       tl.fromTo(
-        ".work_banner",
-        { opacity: 0, y: "-100%" },
-        { opacity: 1, y: "0%" }
-      );
+        ".nav_anime, #footer",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.75 }
+      )
+        .fromTo(
+          ".work_banner",
+          { opacity: 0, y: "-100%", delay: 0.5 },
+          { opacity: 1, y: "0%", duration: 2 }
+        )
+        .fromTo(
+          ".textblock_01",
+          { opacity: 0 },
+          { opacity: 1, duration: 0.8, delay: -0.5 }
+        );
+
+      //       tl.fromTo(
+      //   ".work_banner",
+      //   { opacity: 0, y: "-100%" },
+      //   { opacity: 1, y: "0%" }
+      // );
     </script>
   </body>
 </html>

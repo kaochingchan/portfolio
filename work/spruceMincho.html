@@ -25,6 +25,13 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
@@ -60,7 +67,7 @@
 
       <div id="nav_mb" class="nav_anime">
         <div>
-          <a href="./homepage.html"
+          <a href="../homepage.html"
             ><img src="../img/component/Logo_Black.svg" alt="" id="nav_mb_logo"
           /></a>
           <img src="../img/component/burger_mb_black.svg" alt="" id="burger" />
@@ -163,6 +170,19 @@
         <img src="../img/spruceMincho/mockup04.png" alt="" />
       </div>
 
+      <div id="swiper_mb">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide_img" id="slide_1"></div>
+            <div class="swiper-slide slide_img" id="slide_2"></div>
+            <div class="swiper-slide slide_img" id="slide_3"></div>
+            <div class="swiper-slide slide_img" id="slide_4"></div>
+          </div>
+        </div>
+      </div>
+
       <div id="footer">
         <div id="footer_text">
           <h5>EMAIL john0207200@gmail.com</h5>
@@ -176,17 +196,46 @@
       </div>
     </div>
     <script>
+      //swiper
+      var swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 2000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
       const tl = gsap.timeline({
-        defaults: { duration: 2, ease: "power2.out" },
+        defaults: { ease: "power2.out" },
         delay: 0.5,
       });
 
       // 布幕下拉效果
       tl.fromTo(
-        ".work_banner",
-        { opacity: 0, y: "-100%" },
-        { opacity: 1, y: "0%" }
-      );
+        ".nav_anime, #footer",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.75 }
+      )
+        .fromTo(
+          ".work_banner",
+          { opacity: 0, y: "-100%", delay: 0.5 },
+          { opacity: 1, y: "0%", duration: 2 }
+        )
+        .fromTo(
+          ".textblock_01",
+          { opacity: 0 },
+          { opacity: 1, duration: 0.8, delay: -0.5 }
+        );
+
+      //       tl.fromTo(
+      //   ".work_banner",
+      //   { opacity: 0, y: "-100%" },
+      //   { opacity: 1, y: "0%" }
+      // );
     </script>
   </body>
 </html>
