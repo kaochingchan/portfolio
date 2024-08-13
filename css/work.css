@@ -211,6 +211,20 @@ html {
   transition: background-image 0.35s ease;
 }
 
+#ui_02 {
+  background-image: url("../img/metroHack/workBlock.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35s ease;
+}
+
+#ui_02:hover {
+  background-image: url("../img/metroHack/workBlock.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35s ease;
+}
+
 #packaging_01 {
   background-image: url("../img/teaPackaging/workblock.png");
   background-position: center;
@@ -223,4 +237,18 @@ html {
   background-position: center;
   background-size: cover;
   border-radius: 0px 50px;
+}
+
+#packaging_02 {
+  background-image: url("../img/asyncAlbum/workblock_hover.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35s ease;
+  /* border: 0.25px #fff solid; */
+}
+#packaging_02:hover {
+  background-image: url("../img/asyncAlbum/workblock.png");
+  background-position: center;
+  background-size: cover;
+  transition: background-image 0.35s ease;
 }

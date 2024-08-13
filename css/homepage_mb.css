@@ -104,6 +104,14 @@
     background-image: url("../img/artisanHan/homepage_img_mb.png");
   }
 
+  #slide_8 {
+    background-image: url("../img/foodApp/homepage_img_mb.png");
+  }
+
+  #slide_9 {
+    background-image: url("../img/asyncAlbum/homepage_img_bg.png");
+  }
+
   h5 {
     font-family: "Barlow", sans-serif;
     font-weight: 300;

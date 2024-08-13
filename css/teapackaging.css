@@ -11,6 +11,7 @@ h5,
 h6,
 p {
   color: white;
+  font-display: optional;
 }
 
 p {
@@ -29,6 +30,9 @@ p {
   background-color: #000;
 }
 
+/* .textblock_01 {
+  visibility: hidden;
+} */
 .fullimg_block {
   width: 100%;
   height: auto;

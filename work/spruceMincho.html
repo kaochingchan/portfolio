@@ -215,27 +215,27 @@
       });
 
       // 布幕下拉效果
-      tl.fromTo(
-        ".nav_anime, #footer",
-        { opacity: 0 },
-        { opacity: 1, duration: 0.75 }
-      )
-        .fromTo(
-          ".work_banner",
-          { opacity: 0, y: "-100%", delay: 0.5 },
-          { opacity: 1, y: "0%", duration: 2 }
-        )
-        .fromTo(
-          ".textblock_01",
-          { opacity: 0 },
-          { opacity: 1, duration: 0.8, delay: -0.5 }
-        );
+      // tl.fromTo(
+      //   ".nav_anime, #footer",
+      //   { opacity: 0 },
+      //   { opacity: 1, duration: 0.75 }
+      // )
+      //   .fromTo(
+      //     ".work_banner",
+      //     { opacity: 0, y: "-100%", delay: 0.5 },
+      //     { opacity: 1, y: "0%", duration: 2 }
+      //   )
+      //   .fromTo(
+      //     ".textblock_01",
+      //     { opacity: 0 },
+      //     { opacity: 1, duration: 0.8, delay: -0.5 }
+      //   );
 
-      //       tl.fromTo(
-      //   ".work_banner",
-      //   { opacity: 0, y: "-100%" },
-      //   { opacity: 1, y: "0%" }
-      // );
+      tl.fromTo(
+        ".work_banner",
+        { opacity: 0, y: "-100%" },
+        { opacity: 1, y: "0%", duration: 2 }
+      );
     </script>
   </body>
 </html>
