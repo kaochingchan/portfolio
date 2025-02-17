@@ -112,6 +112,14 @@
     background-image: url("../img/asyncAlbum/homepage_img_bg.png");
   }
 
+  #slide_10 {
+    background-image: url("../img/newrounded/homepage_img_mb.png");
+  }
+
+  #slide_11 {
+    background-image: url("../img/spruceBlack/spruceBlack_homepage_mb.png");
+  }
+
   h5 {
     font-family: "Barlow", sans-serif;
     font-weight: 300;

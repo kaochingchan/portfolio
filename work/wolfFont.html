@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="”description”"
+      content="雲杉為一款瘦長明體風格的字型提案，亦為第六屆造字鼓勵元輔導成果。"
+    />
+    <title>狼體</title>
+    <link rel="stylesheet" href="../css/component.css" />
+    <link rel="stylesheet" href="../css/blackcomponent.css" />
+
+    <link rel="stylesheet" href="../css/wolfFont.css" />
+    <link rel="stylesheet" href="../css/wolfFont_mb.css" />
+    <link rel="icon" href="../img/component/favicon.ico" sizes="any" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- fontwawesome -->
+    <script
+      src="https://kit.fontawesome.com/f5377ada9d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/nav_mb.js"></script>
+  </head>
+  <body>
+    <div class="containerWrapper">
+      <div class="container">
+        <!-- 導覽列 -->
+        <div id="nav">
+          <a href="../homepage.html"
+            ><img src="../img/component/Logo_Black.svg" alt="" id="navlogo"
+          /></a>
+          <div id="nav_text">
+            <a href="../work.html"> <h1>WORK</h1> </a>
+            <a href="../about.html"> <h1>ABOUT</h1> </a
+            ><a href="">
+              <h1>BLOG</h1>
+            </a>
+            <a href="https://www.instagram.com/kao_type/" id="igIcon"
+              ><i class="fa-brands fa-instagram custom-icon"></i
+            ></a>
+          </div>
+        </div>
+
+        <div id="null"></div>
+      </div>
+
+      <div id="nav_mb" class="nav_anime">
+        <div>
+          <a href="../homepage.html"
+            ><img src="../img/component/Logo_Black.svg" alt="" id="nav_mb_logo"
+          /></a>
+          <img src="../img/component/burger_mb_black.svg" alt="" id="burger" />
+        </div>
+
+        <div id="nav_mb_text">
+          <a href="../work.html"> <h1>WORK</h1> </a>
+          <a href="../about.html"> <h1>ABOUT</h1> </a>
+          <a href="">
+            <h1>BLOG</h1>
+          </a>
+          <a href="https://www.instagram.com/kao_type/">
+            <h1>Instagram</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="null"></div>
+    <div class="banner_wrapper">
+      <div class="work_banner"></div>
+    </div>
+
+    <div class="container">
+      <!-- 主要內容 -->
+      <!-- 頁尾 -->
+      <div class="textblock_01">
+        <div class="info">
+          <div class="info_title">狼體</div>
+          <div class="info_year">
+            <p>2020.12-2021.2</p>
+            <p>字型設計</p>
+          </div>
+          <div class="info_team">
+            <p>設計: 高慶展</p>
+          </div>
+        </div>
+        <div class="description">
+          <p>
+            從狼特質與外觀出發，收尾仿照狼尾為主要特色，揉和隸書特性，字體較寬扁、穩重，筆畫較粗、空間佈局緊湊表現狼粗獷勇猛的特質，為適用於標題的字型。
+          </p>
+        </div>
+      </div>
+
+      <div class="fullimg_block">
+        <img
+          src="../img/wolfType/wolffont_02.png"
+          alt="狼體字型陳列"
+          id="fullLayout"
+        />
+      </div>
+
+      <div class="fullimg_block">
+        <img
+          src="../img/wolfType/wolffont_display01.png"
+          alt="狼體應用效果01"
+          id="apply01"
+        />
+      </div>
+
+      <div class="fullimg_block">
+        <img
+          src="../img/wolfType/wolffont_display02.png"
+          alt="狼體應用效果02"
+          id="apply02"
+        />
+      </div>
+
+      <div class="fullimg_block">
+        <img
+          src="../img/wolfType/wolffont_01.png"
+          alt="狼體密排"
+          id="apply03"
+        />
+      </div>
+
+      <div class="fullimg_block">
+        <img
+          src="../img/wolfType/wolffont_poster.png"
+          alt="狼體密排"
+          id="poster01"
+        />
+      </div>
+
+      <div id="footer">
+        <div id="footer_text">
+          <h5>EMAIL john0207200@gmail.com</h5>
+          <h5>Instagram kao_type</h5>
+        </div>
+        <img
+          src="../img/component/Secondary_LogoBlack.svg"
+          alt=""
+          id="footer_logo"
+        />
+      </div>
+    </div>
+    <script>
+      //swiper
+      var swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 2000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const tl = gsap.timeline({
+        defaults: { ease: "power2.out" },
+        delay: 0.5,
+      });
+
+      // 布幕下拉效果
+      // tl.fromTo(
+      //   ".nav_anime, #footer",
+      //   { opacity: 0 },
+      //   { opacity: 1, duration: 0.75 }
+      // )
+      //   .fromTo(
+      //     ".work_banner",
+      //     { opacity: 0, y: "-100%", delay: 0.5 },
+      //     { opacity: 1, y: "0%", duration: 2 }
+      //   )
+      //   .fromTo(
+      //     ".textblock_01",
+      //     { opacity: 0 },
+      //     { opacity: 1, duration: 0.8, delay: -0.5 }
+      //   );
+
+      tl.fromTo(
+        ".work_banner",
+        { opacity: 0, y: "-100%" },
+        { opacity: 1, y: "0%", duration: 2 }
+      );
+    </script>
+  </body>
+</html>

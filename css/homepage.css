@@ -183,6 +183,18 @@ h5 {
   background-repeat: no-repeat;
 }
 
+#slide_10 {
+  background-image: url("../img/newrounded/homepage_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#slide_11 {
+  background-image: url("../img/spruceBlack/spruceBlack_homepage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .overlay {
   width: 100%;
   height: 100%;

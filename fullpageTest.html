@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="UpperText">
+      <h1>影片上方區塊</h1>
+    </div> -->
+
+    <div id="fullpage">
+      <div class="section"><h1>fullPage.js</h1></div>
+      <div class="section">
+        <div class="slide"><h1>Section 2</h1></div>
+        <div class="slide"><h1>Slide 2.2</h1></div>
+        <div class="slide"><h1>Slide 2.3</h1></div>
+      </div>
+      <div class="section" id="section2"><h1>Section3</h1></div>
+    </div>
+    <!-- 
+    <div id="downText">
+      <h1>影片下方區塊</h1>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.27/dist/fullpage.min.js"></script>
+    <script>
+      new fullpage("#fullpage-container", {
+        // Fullpage.js 配置選項
+        anchors: ["firstPage", "secondPage", "thirdPage"],
+        navigation: true,
+        navigationPosition: "right",
+        scrollBar: true, // 這樣可以保留瀏覽器的滾動條
+      });
+      fullpage_api.setAllowScrolling(true);
+    </script>
+  </body>
+</html>

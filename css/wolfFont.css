@@ -1,0 +1,58 @@
+.info_title {
+  color: #000000;
+}
+
+.work_banner {
+  background-image: url("../img/wolfType/banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fullimg_block {
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0px;
+}
+
+.fullimg_block img {
+  width: 100%;
+}
+
+.imgBlock {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.imgBlock img {
+  width: 50%;
+}
+
+#strokes {
+  width: 35%;
+}
+
+#fullLayout {
+  width: 80%;
+}
+
+#apply01 {
+  width: 75%;
+}
+
+#apply02 {
+  width: 70%;
+}
+
+#apply03 {
+  width: 90%;
+}
+
+#poster01 {
+  width: 100%;
+}
