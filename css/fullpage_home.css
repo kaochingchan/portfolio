@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "IBM Plex Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "IBM Plex Sans TC", sans-serif;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.slide-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.swiper-slide:hover .slide-overlay {
+  opacity: 1;
+}
+
+.slide-content {
+  max-width: 80%;
+  padding: 20px;
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+
+.slide-content h2 {
+  font-size: 2rem;
+  font-family: "IBM Plex Sans TC", sans-serif;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.slide-content p {
+  font-size: 1.5rem;
+  font-family: "IBM Plex Sans TC", sans-serif;
+  font-weight: 350;
+}
+
+/* 隱藏Swiper導航按鈕和分頁器 */
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  display: none;
+}
+
+#slide_1 {
+  background-image: url("../img/spruceMincho/homepage_img02.png");
+}
+
+#slide_2 {
+  background-image: url("../img/spruceBlack/spruceBlack_homepage.png");
+}
+
+#slide_3 {
+  background-image: url("../img/logotype/homepage_img.png");
+}
+
+#slide_4 {
+  background-image: url("../img/teaPackaging/homepage_img02.png");
+}
+
+#slide_5 {
+  background-image: url("../img/newrounded/homepage02.png");
+}
+
+#slide_6 {
+  background-image: url("../img/logotype/homepage_deExMachina.png");
+}
+
+#slide_7 {
+  background-image: url("../img/logotype/homepage_ballon.png");
+}
+
+/* 漢堡按鈕樣式 */
+.menu-toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/* 側邊欄樣式 */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px; /* 初始隱藏在右側 */
+  width: 300px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  z-index: 99;
+  padding: 80px 20px 20px;
+  overflow-y: auto;
+}
+
+/* 側邊欄選單內容 */
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 20px;
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.menu-item ul {
+  list-style: none;
+}
+
+.menu-item li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.menu-item a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu-item a:hover {
+  color: white;
+}
+
+/* 選單背景遮罩 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 98;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ibm/plex-sans-tc": "^1.1.1"
+  }
+}
